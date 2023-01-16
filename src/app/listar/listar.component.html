@@ -1,0 +1,13 @@
+<div style="width:100%">
+<h4>Selecione a sigla</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Selecione</mat-label>
+  <mat-select (selectionChange)="onSelect($event)">
+    <mat-option value="N">N</mat-option>
+    <mat-option value="NE">NE</mat-option>
+    <mat-option value="S">S</mat-option>
+    <mat-option value="SE">SE</mat-option>
+  </mat-select>
+</mat-form-field>
+<pre>{{result | json}}</pre>
+</div>
